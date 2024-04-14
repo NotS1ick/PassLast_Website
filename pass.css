@@ -1,0 +1,373 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', 'OpenSans-Semibold', sans-serif;
+    transition: background-color 0.9s ease;
+}
+
+body {
+  margin: 0;
+  background: #fdcc04;
+ animation: transitionIn 0.9s;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+nav {
+  height: 80px;
+  background: #fdcc04;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 calc((100vw - 1800px) / 2);
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  padding: 0 1.5rem;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.logo {
+  display: inline-block;
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+  transition: all 0.3s;
+  border-radius: 50px;
+}
+
+.logo:hover {
+  background-color: #fff;
+  color: #000;
+  transform: scale(1.1);
+}
+
+.bravo {
+  background: #fdcc04;
+  animation: transitionIn 0.9s;
+}
+
+.bravo-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 95vh;
+  padding: 3rem calc((100vw - 1300px) / 2);
+  animation: transitionIn 0.9s;
+}
+
+.column-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #000;
+  padding: 0rem 2rem;
+  animation: transitionIn 0.9s;
+}
+
+.column-left h1 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  animation: transitionIn 0.9s;
+}
+
+.column-left p {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  animation: transitionIn 0.9s;
+}
+
+.white {
+  display: inline-block;
+  margin: 10px;
+  padding: 1rem 3rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  color: #fdcc04;
+  background: #000;
+  border-radius: 50px;
+  transition: all 0.3s;
+  cursor: pointer;
+  animation: transitionIn 0.9s;
+}
+
+.black {
+  display: inline-block;
+  margin: 10px;
+  padding: 1rem 3rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border: 3px solid #000;
+  color: #fdcc04;
+  background: #000;
+  border-radius: 50px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.black:hover {
+  background-color: #fff;
+  color: #000;
+  transform: scale(1.1);
+}
+
+.white:hover {
+  background: #fff;
+  color: #000;
+  transform: scale(1.1);
+}
+
+.column-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 2rem;
+  animation: transitionIn 0.9s;
+}
+
+.bravo-image {
+  width: 100%;
+  height: 100%;
+  animation: transitionIn 0.9s;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  animation: transitionIn 0.9s;
+}
+
+.generator {
+  width: 100%;
+  max-width: 640px;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  position: relative;
+  animation: transitionIn 0.9s;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #d3d3d3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: transitionIn 0.9s;
+}
+
+input[type="checkbox"] {
+  opacity: 0;
+  position: relative;
+  right: 675px;
+}
+
+.alpha {
+  background-color: #fa8072;
+  width: 64px;
+  height: 32px;
+  border-radius: 64px;
+  cursor: pointer;
+  position: relative;
+  animation: transitionIn 0.9s;
+}
+
+.alpha::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: '\2715';
+  background-color: red;
+  color: white;
+  width: 22px;
+  height: 22px;
+  border-radius: 64px;
+  margin: 5px;
+  transition: 0.2s;
+}
+
+input:checked + .alpha {
+  background-color: #00ff00;
+  content: '\2713';
+}
+
+input:checked + .alpha::before {
+  transform: translateX(2rem);
+  content: '\2713';
+  background-color: #008000;
+  color: white;
+}
+
+.password-wrap {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin-bottom: 1rem;
+  animation: transitionIn 0.9s;
+}
+
+.password-wrap:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 100%;
+  height: 3px;
+  left: 0;
+  right: 0;
+  border-radius: 3px;
+  background: linear-gradient(to right, #fdcc04 25%, #ad25fc 75%);
+}
+
+.password-wrap input {
+  flex: 1 1 0%;
+  padding: 0.5rem;
+  background: transparent;
+  color: #518cd4;
+  border: none;
+  animation: transitionIn 0.9s;
+}
+
+.password-wrap input::placeholder {
+  color: darkred;
+  font-style: italic;
+}
+
+.password-wrap button {
+  cursor: pointer;
+  background: linear-gradient(to bottom, #fdcc04 0%, #ad25fc 75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: none;
+  animation: transitionIn 0.9s;
+}
+
+label {
+  display: flex;
+  user-select: none;
+  margin-bottom: 1rem;
+  animation: transitionIn 0.9s;
+}
+
+label span {
+  display: block;
+  flex: 1 1 0%;
+  white-space: nowrap;
+}
+
+label input[type="number"] {
+  text-align: center;
+  width: 64px;
+  height: 32px;
+  border-radius: 200px;
+  border: 2px solid #00ff00;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+hr.new1 {
+  color: #000;
+  background-color: #000;
+  border: 2px solid #000;
+}
+
+@media   (max-width: 830px) {
+  .logo  {
+    font-size: 1.5rem;
+  }
+  .black, .header__btn {
+    font-size: 0.8rem;
+  }
+} 
+
+@media   (max-width: 781px) {
+  .header {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo  {
+    font-size: 1.3rem;
+  }
+  .header__menu,
+  .black {
+    display: none
+  }
+  .header__sun {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  }
+  
+  @media  (max-width: 409px) {
+    .password-wrap {
+      position: relative;
+      display: flex;
+      width: 100%;
+      margin-bottom: 1rem;
+      max-width: 409px;
+    }
+    .password-wrap:after {
+      max-width: 409px;
+    }
+    
+    .password-wrap input {
+      max-width: 409px;
+    }
+    
+    .password-wrap input::placeholder {
+      max-width: 409px;
+    }
+    
+    .password-wrap button {
+      max-width: 409px;
+    }
+    label {
+      max-width: 409px;
+    }
+    
+    label span {
+      max-width: 409px;
+    }
+    
+    label input[type="number"] {
+      max-width: 409px;
+    }
+    input:checked + .alpha::before {
+      max-width: 409px;
+    }
+    input:checked + .alpha {
+      max-width: 409px;
+    }
+    input[type="checkbox"] {
+      max-width: 409px;
+    }
+  }

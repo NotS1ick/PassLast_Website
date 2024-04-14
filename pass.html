@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PassLast</title>
+  <link rel="shortcut icon" type="x-icon" href="icon.png"/>
+  <link rel="stylesheet" href="pass.css" />
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="dropdown.css"/>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html" class="logo"><img src="homebutton.png" , width="130" , height="20"></a>
+    <div class="nav-items">
+      <a href="pass.html" class="black">Ģenerēt paroli</a>
+      <a href="about.html" class="black">Par mums</a>
+      <a href="contacts.html" class="black">Kontakti</a>
+    </div>
+    <div class="dropdown", class="topcorner", style="float:right;">
+      <a><button class="dropbtn", class="topcorner"><img src="menubutton.png"></button></a>
+      <div class="dropdown-content", class="topcorner">
+        <a href="pass.html" class="black">Ģenerēt paroli</a>
+        <a href="about.html" class="black">Par mums</a>
+        <a href="contacts.html" class="black">Kontakti</a>
+      </div>
+    </div>
+  </nav>
+
+  <hr class="new1">
+  <main>
+
+    <div class="generator">
+
+      <h1 align="center"><strong>Paroles ģenerātors</strong></h1>
+
+      <label class="password-wrap">
+        <input type="text" id="password" readonly placeholder="Ģenerēte paroli" />
+        <button class="material-icons" id="copy">content_copy</button>
+      </label>
+
+      <label>
+        <span class="new1">
+          <h2>Paroles Garums:</h2>
+        </span>
+        <input type="number" id="length" value="16" />
+      </label>
+      <label>
+        <span class="new1">
+          <h2>Lielie Burti:</h2>
+        </span>
+        <input type="checkbox" id="uppercase" checked />
+        <label for="uppercase" class="alpha"></label>
+      </label>
+      <label>
+        <span class="new1">
+          <h2>Mazie Burti:</h2>
+        </span>
+        <input type="checkbox" id="lowercase" checked />
+        <label for="lowercase" class="alpha"></label>
+      </label>
+
+      <label>
+        <span class="new1">
+          <h2>Cipari:</h2>
+        </span>
+        <input type="checkbox" id="numbers" checked />
+        <label for="numbers" class="alpha"></label>
+      </label>
+
+      <label>
+        <span class="new1">
+          <h2>Simboli:</h2>
+        </span>
+        <input type="checkbox" id="symbols" checked />
+        <label for="symbols" class="alpha"></label>
+      </label>
+
+      <center><button type="submit" id="generate" class="white">Ģenerēt paroli</button></center>
+
+    </div>
+
+  </main>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
